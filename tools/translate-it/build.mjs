@@ -22,7 +22,7 @@ for (const f of fs.readdirSync(src)) {
   if (/See the|Default setup/.test(s.description?.value || '')) missing.add('desc: ' + orig)
   d.flags.CoC7.cocidFlag.lang = 'it'
   d._id = newId(d._id); d._key = '!items!' + d._id
-  fs.writeFileSync(`${out}/${d.name.replace(/[^\p{L}\p{N}]+/gu, '_')}_${d._id}.json`, JSON.stringify(d, null, 2) + '\n')
+  fs.writeFileSync(`${out}/${d.name.normalize('NFD').replace(/[^A-Za-z0-9]+/g, '_')}_${d._id}.json`, JSON.stringify(d, null, 2) + '\n')
 }
 if (missing.size) { console.log([...missing].join('\n')); process.exit(1) }
 console.log('ok', fs.readdirSync(out).length)

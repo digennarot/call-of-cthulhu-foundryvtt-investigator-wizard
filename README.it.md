@@ -9,7 +9,7 @@
 
 ## Panoramica
 
-Questo pacchetto di contenuti fornisce archetipi, occupazioni, configurazioni e abilità di base. Con questi materiali già pronti, la procedura guidata di creazione dell'investigatore si completa in pochi passaggi. Funziona con l'[implementazione di Call of Cthulhu 7ª edizione per Foundry Virtual Tabletop](https://github.com/Miskatonic-Investigative-Society/CoC7-FoundryVTT).
+Questo pacchetto di contenuti fornisce archetipi, professioni, configurazioni e abilità di base. Con questi materiali già pronti, la procedura guidata di creazione dell'investigatore si completa in pochi passaggi. Funziona con l'[implementazione di Call of Cthulhu 7ª edizione per Foundry Virtual Tabletop](https://github.com/Miskatonic-Investigative-Society/CoC7-FoundryVTT).
 
 Per suggerimenti e commenti ci trovate sul canale `#chaosium` del [server Discord di Foundry](https://discord.gg/foundryvtt).
 
@@ -20,16 +20,18 @@ L'elenco delle modifiche è nel [CHANGELOG](https://github.com/Miskatonic-Invest
 Installate il sistema CoC7 in Foundry VTT dalla scheda *Game Systems* (Sistemi di gioco) con questo manifest:
 `https://github.com/Miskatonic-Investigative-Society/CoC7-FoundryVTT/releases/latest/download/system.json`
 
-Installate poi il modulo dalla scheda *Add-on Modules* (Moduli aggiuntivi) con questo manifest. È la versione con il compendio in italiano: se avete già il modulo originale, questa lo sostituisce, perché ha lo stesso identificativo.
+Installate poi il modulo dalla scheda *Add-on Modules* (Moduli aggiuntivi) con questo manifest:
 `https://github.com/digennarot/call-of-cthulhu-foundryvtt-investigator-wizard/releases/latest/download/module.json`
+
+È la versione con il compendio in italiano. Ha lo stesso identificativo del modulo originale e, se quello è già installato, lo sostituisce.
 
 Aprite il vostro mondo, andate in *Game Settings* (Impostazioni di gioco) e scegliete *Manage Modules* (Gestisci moduli). Spuntate «Call of Cthulhu - FoundryVTT - Investigator Wizard» e salvate con *Save Module Settings*.
 
 ### Compendio in italiano
 
-Il modulo include anche il compendio *Investigator Wizard (Italiano)*, con abilità, professioni, archetipi e configurazioni tradotti. Se Foundry è impostato in italiano, la procedura guidata usa queste voci. Quelle senza traduzione vengono prese dal compendio inglese.
+Il modulo include anche il compendio *Investigator Wizard (Italiano)*, con abilità, professioni, archetipi e configurazioni tradotti. Se Foundry è impostato in italiano, la procedura guidata usa queste voci; per quelle che mancano, per esempio gli oggetti aggiunti da altri moduli, ripiega sull'inglese.
 
-Le abilità hanno i nomi del manuale italiano e le specializzazioni coincidono con le traduzioni del sistema CoC7 (*Combattere*, *Armi da Fuoco*, *Generico*). I rimandi alle pagine restano quelli dei manuali in inglese. Per correggere una traduzione si modifica `tools/translate-it/dict.mjs` e si rigenera il compendio con `tools/translate-it/build.mjs`.
+Le specializzazioni (*Combattere*, *Armi da Fuoco*, *Generico* e le altre) coincidono parola per parola con le traduzioni del sistema CoC7, che le riconosce solo così. Gli altri nomi non sono stati confrontati con i manuali italiani e qualcuno potrebbe differire. I rimandi alle pagine restano quelli dei manuali in inglese. Per correggere una traduzione si modifica `tools/translate-it/dict.mjs` e si rigenera il compendio con `tools/translate-it/build.mjs`.
 
 ## Segnalazioni
 

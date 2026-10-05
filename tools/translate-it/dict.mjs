@@ -370,7 +370,7 @@ export const occupation = {
   Mercenary: 'Mercenario',
   Merchant: 'Mercante',
   'Military Officer': 'Ufficiale',
-  Millwright: 'Mugnaio meccanico',
+  Millwright: 'Costruttore di mulini',
   Miner: 'Minatore',
   Minstrel: 'Menestrello',
   Missionary: 'Missionario',
