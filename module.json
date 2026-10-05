@@ -28,6 +28,17 @@
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
       }
+    },
+    {
+      "name": "investigator-wizard-it",
+      "label": "Investigator Wizard (Italiano)",
+      "path": "packs/investigator-wizard-it",
+      "type": "Item",
+      "system": "CoC7",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     }
   ],
   "description": "This content package comes with the Archetypes, Occupations, Setups, and Skills to speed up using the investigator wizard.",

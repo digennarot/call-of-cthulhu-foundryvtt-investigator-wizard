@@ -25,6 +25,12 @@ Installate poi il modulo dalla scheda *Add-on Modules* (Moduli aggiuntivi) con q
 
 Aprite il vostro mondo, andate in *Game Settings* (Impostazioni di gioco) e scegliete *Manage Modules* (Gestisci moduli). Spuntate «Call of Cthulhu - FoundryVTT - Investigator Wizard» e salvate con *Save Module Settings*.
 
+### Compendio in italiano
+
+Il modulo include anche il compendio *Investigator Wizard (Italiano)*, con abilità, professioni, archetipi e configurazioni tradotti. Se Foundry è impostato in italiano, la procedura guidata usa queste voci. Quelle senza traduzione vengono prese dal compendio inglese.
+
+Le abilità hanno i nomi del manuale italiano e le specializzazioni coincidono con le traduzioni del sistema CoC7 (*Combattere*, *Armi da Fuoco*, *Generico*). I rimandi alle pagine restano quelli dei manuali in inglese. Per correggere una traduzione si modifica `tools/translate-it/dict.mjs` e si rigenera il compendio con `tools/translate-it/build.mjs`.
+
 ## Segnalazioni
 
 Se il modulo non funziona come dovrebbe, aprite una segnalazione qui: https://github.com/Miskatonic-Investigative-Society/call-of-cthulhu-foundryvtt-investigator-wizard/issues
