@@ -31,13 +31,15 @@ Aprite il vostro mondo, andate in *Game Settings* (Impostazioni di gioco) e sceg
 
 Il modulo include anche il compendio *Investigator Wizard (Italiano)*, con abilità, professioni, archetipi e configurazioni tradotti. Se Foundry è impostato in italiano, la procedura guidata usa queste voci; per quelle che mancano, per esempio gli oggetti aggiunti da altri moduli, ripiega sull'inglese.
 
-I nomi delle abilità sono gli stessi del compendio Abilità di [call-of-cthulhu-7th-babele-it](https://github.com/digennarot/call-of-cthulhu-7th-babele-it), così una stessa abilità ha un solo nome in tutti e due i moduli. *Combattere*, *Armi da Fuoco* e *Generico* coincidono anche con le traduzioni del sistema CoC7, che riconosce le specializzazioni confrontando il testo. Le abilità che *babele-it* non ha, e i nomi di professioni e archetipi, non sono stati confrontati con i manuali italiani. I rimandi alle pagine restano quelli dei manuali in inglese.
+I nomi delle abilità sono gli stessi del compendio Abilità di [call-of-cthulhu-7th-babele-it](https://github.com/digennarot/call-of-cthulhu-7th-babele-it), così una stessa abilità ha un solo nome in tutti e due i moduli. *Combattere*, *Armi da Fuoco* e *Generico* coincidono anche con le traduzioni del sistema CoC7, che riconosce le specializzazioni confrontando il testo. C'è un'eccezione: il file di lingua di *babele-it* chiama «Combattimento» la specializzazione di combattimento, e finché resta così, con quel modulo attivo, il confronto su *Combattere* non riesce. Le abilità che *babele-it* non ha, e i nomi di professioni e archetipi, non sono stati confrontati con i manuali italiani. I rimandi alle pagine restano quelli dei manuali in inglese.
 
 Per correggere una traduzione:
 
-1. modificate `tools/translate-it/dict.mjs`;
-2. rigenerate i sorgenti JSON con `npm run translate -- <cartella JSON del compendio inglese>` (la cartella si ottiene con `npm run extract -- <compendio inglese> <cartella>`, partendo dallo zip della release originale);
-3. fate commit del dizionario insieme a `src/packs/investigator-wizard-it`.
+1. scaricate lo `module.zip` della release originale indicata in `package.json` (`upstream.version`) ed estraetelo;
+2. convertite il compendio inglese in JSON: `npm run extract -- <cartella estratta>/packs/investigator-wizard build/en-json`;
+3. modificate `tools/translate-it/dict.mjs`;
+4. rigenerate i sorgenti italiani: `npm run translate -- build/en-json`;
+5. fate commit del dizionario insieme a `src/packs/investigator-wizard-it`.
 
 Il compendio compilato non sta nel repository: lo produce la build su GitHub Actions a ogni push, e sul ramo `docs/readme-it` pubblica anche la release della versione indicata in `module.json`. La build si ferma se i sorgenti JSON non corrispondono al dizionario. Per provare il compendio in locale, `npm run pack` lo compila in `packs/investigator-wizard-it`.
 
