@@ -20,8 +20,8 @@ L'elenco delle modifiche è nel [CHANGELOG](https://github.com/Miskatonic-Invest
 Installate il sistema CoC7 in Foundry VTT dalla scheda *Game Systems* (Sistemi di gioco) con questo manifest:
 `https://github.com/Miskatonic-Investigative-Society/CoC7-FoundryVTT/releases/latest/download/system.json`
 
-Installate poi il modulo dalla scheda *Add-on Modules* (Moduli aggiuntivi) con questo manifest:
-`https://github.com/Miskatonic-Investigative-Society/call-of-cthulhu-foundryvtt-investigator-wizard/releases/latest/download/module.json`
+Installate poi il modulo dalla scheda *Add-on Modules* (Moduli aggiuntivi) con questo manifest. È la versione con il compendio in italiano: se avete già il modulo originale, questa lo sostituisce, perché ha lo stesso identificativo.
+`https://github.com/digennarot/call-of-cthulhu-foundryvtt-investigator-wizard/releases/latest/download/module.json`
 
 Aprite il vostro mondo, andate in *Game Settings* (Impostazioni di gioco) e scegliete *Manage Modules* (Gestisci moduli). Spuntate «Call of Cthulhu - FoundryVTT - Investigator Wizard» e salvate con *Save Module Settings*.
 
